@@ -1,4 +1,4 @@
-import { User } from './User.js';
+
 import { checkUser } from './init-app.js';
 import { activateFoodIcons } from './plate-management.js';
 
