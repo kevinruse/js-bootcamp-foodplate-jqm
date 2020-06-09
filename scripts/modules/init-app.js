@@ -5,6 +5,7 @@ import { updateImages } from './plate-management.js';
 import { DOMnodes } from './dom-nodes.js';
 import { getUserInitStatus } from './init-status.js';
 import { storeUserData, storeDate, setRegBtnValue } from './utils.js';
+import {User} from './User.js';
 
 function checkUser() {
     console.info('%cinit-app module has loaded', 'color: red');
@@ -13,6 +14,8 @@ function checkUser() {
         getUser();
         setRegBtn();
     } else {
+        FoodPlate.user = new User();
+        console.table(FoodPlate.user);
         FoodPlate.user.registered = false;
         console.log(`userIsRegistered: ${FoodPlate.user.registered}`);
         setRegBtn();
