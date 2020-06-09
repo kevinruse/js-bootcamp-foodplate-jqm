@@ -72,18 +72,30 @@ function createReturnToPlateBtn() {
 
 function createConfirmMessage() {
     let selectedGender = formatGender(FoodPlate.user.userGender);
-    const confirmDiv = document.createElement('div');
-    confirmDiv.setAttribute('class', 'confirmMessage');
-    const confirmH2userName = document.createElement('h2');
-    confirmH2userName.innerText = `You have successfully registered as: ${FoodPlate.user.userName }`;
-    confirmDiv.appendChild(confirmH2userName);
-    const confirmPAge = document.createElement('p');
-    confirmPAge.innerText = `Your age group is: ${FoodPlate.user.ageGroup}`;
-    confirmDiv.appendChild(confirmPAge);
-    const confirmPGender = document.createElement('p');
-    confirmPGender.innerText = `Your gender is: ${selectedGender}`;
-    confirmDiv.appendChild(confirmPGender);
-    return confirmDiv;
+    // create a constant called confirmDiv. The value of the constant should create a '<div>' element
+
+    // create an attribute of the confirmDiv element that assigns a css class called 'confirmMessage'
+
+    // create a constant called confirmH2userName and assign a value that creates a new '<h2>' element
+
+    // give the confirmH2userName a child text node  = `You have successfully registered as: ` followed by the FoodPlate user object's userName property
+
+    // append the new confirmH2userName element to the confirmDiv element
+
+    // create a constant called confirmPAge and assign the value that creates a new '<p>' element
+
+    // assign the <p> element's a child text node = `Your age group is: ` followed by the FoodPlate user object's ageGroup property
+
+    // append the confirmPAge to the confirmDiv
+
+    // create a constant called confirmPGender and assign the value that creates a new <p> element
+
+    // assign the confirmPGender element a child text  node = `Your gender is ` followed by the selectedGender variable declared in the first line of this function
+
+    // append the confirmPGender element to the confirmDiv element
+
+    // return the confirmDiv
+
 }
 
 function formatGender(gender) {
